@@ -1,0 +1,14 @@
+<Window x:Class="OakControl.Views.CadastroProdutoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro de Produto" Height="350" Width="525">
+    <Grid>
+        <TextBox Text="{Binding Produto.Nome}" />
+        <TextBox Text="{Binding Produto.Categoria}" />
+        <TextBox Text="{Binding Produto.Descricao}" />
+        <TextBox Text="{Binding Produto.PrecoVenda}" />
+        <TextBox Text="{Binding Produto.QuantidadeEstoque}" />
+        <TextBox Text="{Binding Produto.Fornecedor}" />
+        <Button Content="Salvar" Command="{Binding SalvarCommand}" />
+    </Grid>
+</Window>
